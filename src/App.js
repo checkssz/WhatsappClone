@@ -1,6 +1,7 @@
 import './App.css';
-import  Image from './assets/profissao-programador.png'
-
+import  Image from './assets/profissao-programador.png';
+import SendMessageIcon from './assets/send.png';
+ 
 function App() {
   return (
     <div className="container">
@@ -33,8 +34,9 @@ function App() {
         <div className='chat-messages-area'>
           
         </div>
-        <div className='chat-imput-area'>
-          
+        <div className='chat-input-area'>
+          <input className='chat-input' placeholder='Mensagem'/>
+          <img src={SendMessageIcon} alt='' className='send-message-icon'/>
         </div>
       </div>      
       
